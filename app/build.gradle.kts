@@ -129,7 +129,9 @@ android {
         )
     }
 
-    namespace = project.property("APP_ID").toString()
+    // Rosenweg: nur die applicationId ist eigen (ch.rosenweg4303.keyboard); der
+    // Kotlin-Namensraum bleibt wie im Original, damit der Code unveraendert bleibt.
+    namespace = "org.fossify.keyboard"
 
     lint {
         checkReleaseBuilds = false
