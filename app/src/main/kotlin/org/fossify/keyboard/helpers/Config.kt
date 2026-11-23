@@ -11,6 +11,11 @@ class Config(context: Context) : BaseConfig(context) {
         fun newInstance(context: Context) = Config(context.safeStorageContext)
     }
 
+    /** Rosenweg: wurden die Vorgaben (Kontrast, Treffbarkeit) schon einmal gesetzt? */
+    var rosenwegVorgabenGesetzt: Boolean
+        get() = prefs.getBoolean("rosenweg_vorgaben_v1", false)
+        set(wert) = prefs.edit().putBoolean("rosenweg_vorgaben_v1", wert).apply()
+
     var vibrateOnKeypress: Boolean
         get() = prefs.getBoolean(VIBRATE_ON_KEYPRESS, true)
         set(vibrateOnKeypress) = prefs.edit().putBoolean(VIBRATE_ON_KEYPRESS, vibrateOnKeypress).apply()
