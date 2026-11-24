@@ -16,6 +16,11 @@ class Config(context: Context) : BaseConfig(context) {
         get() = prefs.getBoolean("rosenweg_vorgaben_v1", false)
         set(wert) = prefs.edit().putBoolean("rosenweg_vorgaben_v1", wert).apply()
 
+    /** Rosenweg: Stand der Vorgaben (2 = Hoehe 120 % statt 140 %). */
+    var rosenwegVorgabenStand: Int
+        get() = prefs.getInt("rosenweg_vorgaben_stand", 0)
+        set(wert) = prefs.edit().putInt("rosenweg_vorgaben_stand", wert).apply()
+
     var vibrateOnKeypress: Boolean
         get() = prefs.getBoolean(VIBRATE_ON_KEYPRESS, true)
         set(vibrateOnKeypress) = prefs.edit().putBoolean(VIBRATE_ON_KEYPRESS, vibrateOnKeypress).apply()

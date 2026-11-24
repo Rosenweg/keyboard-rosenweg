@@ -16,7 +16,16 @@ object RosenwegVorgaben {
 
     fun anwenden(context: Context) {
         val c = context.config
-        if (c.rosenwegVorgabenGesetzt) return
+        if (c.rosenwegVorgabenGesetzt) {
+            // Stand 2 (24.11.2026): 140 % war auf dem Galaxy A15 zu gross -> 120 %.
+            if (c.rosenwegVorgabenStand < 2) {
+                if (c.keyboardHeightPercentage == KEYBOARD_HEIGHT_140_PERCENT) {
+                    c.keyboardHeightPercentage = KEYBOARD_HEIGHT_120_PERCENT
+                }
+                c.rosenwegVorgabenStand = 2
+            }
+            return
+        }
         // Ohne das uebernimmt Android 12+ die Systemfarben (Material You) und
         // ignoriert die eigenen Farben.
         c.isSystemThemeEnabled = false
@@ -25,11 +34,12 @@ object RosenwegVorgaben {
         c.primaryColor = Color.BLACK
         c.accentColor = Color.BLACK
         // Treffbarkeit: hoehere Tasten, sichtbare Tastengrenzen, Rueckmeldung.
-        c.keyboardHeightPercentage = KEYBOARD_HEIGHT_140_PERCENT
+        c.keyboardHeightPercentage = KEYBOARD_HEIGHT_120_PERCENT
         c.showKeyBorders = true
         c.showPopupOnKeypress = true
         c.vibrateOnKeypress = true
         c.showNumbersRow = true
         c.rosenwegVorgabenGesetzt = true
+        c.rosenwegVorgabenStand = 2
     }
 }
