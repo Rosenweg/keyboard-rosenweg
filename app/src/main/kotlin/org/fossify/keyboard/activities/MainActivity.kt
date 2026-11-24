@@ -28,6 +28,8 @@ class MainActivity : SimpleActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         appLaunched(BuildConfig.APPLICATION_ID)
+        // Rosenweg (Regel 7): Einstellungen der angemeldeten Person von der Anlage
+        org.fossify.keyboard.helpers.AnlageEinstellungen.abgleichen(this) { recreate() }
         setupOptionsMenu()
         refreshMenuItems()
 

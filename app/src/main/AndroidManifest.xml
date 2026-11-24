@@ -11,6 +11,12 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
+    <!-- Rosenweg: Einstellungen pro Person ueber die Geraete-App (AnlageProvider) -->
+    <uses-permission android:name="ch.rosenweg4303.permission.ANLAGE" />
+    <queries>
+        <provider android:authorities="ch.rosenweg4303.telefon.anlage" />
+    </queries>
+
     <application
         android:name="org.fossify.keyboard.App"
         android:allowBackup="true"
@@ -345,5 +351,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
+        <!-- Rosenweg: An-/Abmelden am geteilten Telefon (nur Rosenweg-Signatur) -->
+        <receiver
+            android:name=".helpers.AnlageEinstellungen$Empfaenger"
+            android:exported="true"
+            android:directBootAware="true"
+            android:permission="ch.rosenweg4303.permission.ANLAGE">
+            <intent-filter>
+                <action android:name="ch.rosenweg4303.ANGEMELDET" />
+                <action android:name="ch.rosenweg4303.ABGEMELDET" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
