@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Klavaro</string>
+    <string name="app_launcher_name">Rosenweg Klavaro</string>
     <string name="change_keyboard">Ŝanĝi Klavaron</string>
     <string name="manage_clipboard_items">Administri tondujajn erojn</string>
     <string name="clear_clipboard_data">Forigi tondujajn datumojn</string>

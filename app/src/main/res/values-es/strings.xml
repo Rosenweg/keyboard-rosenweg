@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Teclado</string>
+    <string name="app_launcher_name">Rosenweg Teclado</string>
     <string name="change_keyboard">Cambio de teclado</string>
     <string name="manage_clipboard_items">Gestionar los elementos del portapapeles</string>
     <string name="manage_clipboard_empty">Su portapapeles está vacío.</string>

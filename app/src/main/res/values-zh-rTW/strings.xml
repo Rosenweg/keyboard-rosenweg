@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">鍵盤</string>
+    <string name="app_launcher_name">Rosenweg 鍵盤</string>
     <string name="change_keyboard">變更鍵盤</string>
     <string name="manage_clipboard_items">管理剪貼簿項目</string>
     <string name="manage_clipboard_empty">您的剪貼簿是空的。</string>

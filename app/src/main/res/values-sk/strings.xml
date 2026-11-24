@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Klávesnica</string>
+    <string name="app_launcher_name">Rosenweg Klávesnica</string>
     <string name="change_keyboard">Zmeniť klávesnicu</string>
     <string name="manage_clipboard_items">Spravovať položky v schránke</string>
     <string name="manage_clipboard_empty">Vaša schránka je prázdna.</string>

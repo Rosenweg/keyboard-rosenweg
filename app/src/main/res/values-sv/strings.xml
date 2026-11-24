@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tangentbord</string>
+    <string name="app_launcher_name">Rosenweg Tangentbord</string>
     <string name="change_keyboard">Byt tangentbord</string>
     <string name="manage_clipboard_items">Hantera urklippsobjekt</string>
     <string name="manage_clipboard_empty">Ditt urklipp är tomt.</string>

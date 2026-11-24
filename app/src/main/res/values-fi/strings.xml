@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Näppäimistö</string>
+    <string name="app_launcher_name">Rosenweg Näppäimistö</string>
     <string name="change_keyboard">Vaihda näppäimistö</string>
     <string name="manage_clipboard_items">Hallitse leikepöydän kohteita</string>
     <string name="manage_clipboard_empty">Leikepöytä on tyhjä.</string>

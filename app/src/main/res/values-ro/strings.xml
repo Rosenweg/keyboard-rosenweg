@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tastatură</string>
+    <string name="app_launcher_name">Rosenweg Tastatură</string>
     <string name="change_keyboard">Schimbați tastatura</string>
     <string name="manage_clipboard_items">Gestionați elementele din clipboard</string>
     <string name="manage_clipboard_empty">Clipboard-ul dvs. este gol.</string>

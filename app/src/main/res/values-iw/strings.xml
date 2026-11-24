@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">מקלדת</string>
+    <string name="app_launcher_name">Rosenweg מקלדת</string>
     <string name="change_keyboard">החלפת מקלדת</string>
     <string name="manage_clipboard_items">נהל פריטי לוח</string>
     <string name="manage_clipboard_empty">הלוח העתקה שלך ריק.</string>

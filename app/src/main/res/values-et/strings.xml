@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Klahvistik</string>
+    <string name="app_launcher_name">Rosenweg Klahvistik</string>
     <string name="change_keyboard">Muuda klaviatuuri</string>
     <string name="manage_clipboard_items">Halda kirjeid lõikelaual</string>
     <string name="manage_clipboard_empty">Lõikelaud on tühi.</string>

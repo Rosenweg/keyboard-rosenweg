@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Клавіатура</string>
+    <string name="app_launcher_name">Rosenweg Клавіатура</string>
     <string name="change_keyboard">Змінити клавіатуру</string>
     <string name="manage_clipboard_items">Керувати елементами буфера обміну</string>
     <string name="manage_clipboard_empty">Ваш буфер обміну порожній.</string>

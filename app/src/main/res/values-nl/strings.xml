@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Toetsenbord</string>
+    <string name="app_launcher_name">Rosenweg Toetsenbord</string>
     <string name="change_keyboard">Toetsenbord veranderen</string>
     <string name="manage_clipboard_items">Klemborditems beheren</string>
     <string name="manage_clipboard_empty">Het klembord is leeg.</string>

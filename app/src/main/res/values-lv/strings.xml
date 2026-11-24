@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tastatūra</string>
+    <string name="app_launcher_name">Rosenweg Tastatūra</string>
     <string name="change_keyboard">Mainīt tastatūru</string>
     <string name="manage_clipboard_items">Vadīt starpliktuves datus</string>
     <string name="manage_clipboard_empty">Jūsu starpliktuve ir tukša.</string>
