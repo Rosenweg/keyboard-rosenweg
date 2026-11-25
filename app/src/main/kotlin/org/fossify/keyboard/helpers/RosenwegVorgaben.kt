@@ -14,6 +14,11 @@ import org.fossify.keyboard.extensions.config
 object RosenwegVorgaben {
     private const val GELB = 0xFFFFD600.toInt()
 
+    private fun deutsch(c: Config) {
+        c.keyboardLanguage = LANGUAGE_GERMAN_QWERTZ
+        c.selectedLanguages = mutableSetOf(LANGUAGE_GERMAN_QWERTZ)
+    }
+
     fun anwenden(context: Context) {
         val c = context.config
         if (c.rosenwegVorgabenGesetzt) {
@@ -24,8 +29,14 @@ object RosenwegVorgaben {
                 }
                 c.rosenwegVorgabenStand = 2
             }
+            // Stand 3 (25.11.2026, Stefan: "deutsch qwertz fuer alle"): einmal auf Deutsch (QWERTZ)
+            if (c.rosenwegVorgabenStand < 3) {
+                deutsch(c)
+                c.rosenwegVorgabenStand = 3
+            }
             return
         }
+        deutsch(c)
         // Ohne das uebernimmt Android 12+ die Systemfarben (Material You) und
         // ignoriert die eigenen Farben.
         c.isSystemThemeEnabled = false
@@ -40,6 +51,6 @@ object RosenwegVorgaben {
         c.vibrateOnKeypress = true
         c.showNumbersRow = true
         c.rosenwegVorgabenGesetzt = true
-        c.rosenwegVorgabenStand = 2
+        c.rosenwegVorgabenStand = 3
     }
 }

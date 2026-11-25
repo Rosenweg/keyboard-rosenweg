@@ -29,7 +29,11 @@ class MainActivity : SimpleActivity() {
         setContentView(binding.root)
         appLaunched(BuildConfig.APPLICATION_ID)
         // Rosenweg (Regel 7): Einstellungen der angemeldeten Person von der Anlage
-        org.fossify.keyboard.helpers.AnlageEinstellungen.abgleichen(this) { recreate() }
+        // nach dem Uebernehmen von der Anlage die Rosenweg-Vorgaben nochmals pruefen (Stand 3: QWERTZ)
+        org.fossify.keyboard.helpers.AnlageEinstellungen.abgleichen(this) {
+            org.fossify.keyboard.helpers.RosenwegVorgaben.anwenden(this)
+            recreate()
+        }
         setupOptionsMenu()
         refreshMenuItems()
 
