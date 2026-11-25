@@ -36,6 +36,11 @@ object RosenwegVorgaben {
                 deutsch(c)
                 c.rosenwegVorgabenStand = 4
             }
+            // Stand 5 (25.11.2026, Stefan: "muss auf 3/8 der Bildschirmflaeche zurueck")
+            if (c.rosenwegVorgabenStand < 5) {
+                c.keyboardHeightPercentage = hoeheFuerDreiAchtel(context)
+                c.rosenwegVorgabenStand = 5
+            }
             return
         }
         deutsch(c)
@@ -47,12 +52,34 @@ object RosenwegVorgaben {
         c.primaryColor = Color.BLACK
         c.accentColor = Color.BLACK
         // Treffbarkeit: hoehere Tasten, sichtbare Tastengrenzen, Rueckmeldung.
-        c.keyboardHeightPercentage = KEYBOARD_HEIGHT_120_PERCENT
+        c.showNumbersRow = true
+        c.keyboardHeightPercentage = hoeheFuerDreiAchtel(context)
         c.showKeyBorders = true
         c.showPopupOnKeypress = true
         c.vibrateOnKeypress = true
         c.showNumbersRow = true
         c.rosenwegVorgabenGesetzt = true
-        c.rosenwegVorgabenStand = 4
+        c.rosenwegVorgabenStand = 5
+    }
+
+    /**
+     * Hoehen-Einstellung, mit der die ganze Tastatur (Symbolleiste + Tastenreihen) etwa 3/8 der
+     * Bildschirmhoehe belegt; gerundet auf die Stufen der Einstellung (70 ... 160 %).
+     * Galaxy A15 (832 dp hoch): 312 dp -> 90 %.
+     */
+    private fun hoeheFuerDreiAchtel(context: Context): Int {
+        val r = context.resources
+        val dm = r.displayMetrics
+        val hoch = maxOf(dm.heightPixels, dm.widthPixels).toFloat()
+        val leiste = r.getDimension(org.fossify.keyboard.R.dimen.toolbar_height)
+        val taste = r.getDimension(org.fossify.keyboard.R.dimen.key_height)
+        val reihen = if (context.config.showNumbersRow) 5 else 4
+        val prozent = ((hoch * 3f / 8f - leiste) / (reihen * taste) * 100f)
+        val stufen = listOf(
+            KEYBOARD_HEIGHT_70_PERCENT, KEYBOARD_HEIGHT_80_PERCENT, KEYBOARD_HEIGHT_90_PERCENT,
+            KEYBOARD_HEIGHT_100_PERCENT, KEYBOARD_HEIGHT_120_PERCENT, KEYBOARD_HEIGHT_140_PERCENT,
+            KEYBOARD_HEIGHT_160_PERCENT,
+        )
+        return stufen.minByOrNull { kotlin.math.abs(it - prozent) } ?: KEYBOARD_HEIGHT_100_PERCENT
     }
 }
