@@ -90,11 +90,11 @@ class Config(context: Context) : BaseConfig(context) {
 
     fun getDefaultLanguage(): Int {
         val conf = context.resources.configuration
-        // Rosenweg: Deutsch (QWERTZ) statt Englisch (QWERTY) als Vorgabe
+        // Rosenweg: Deutsch (volles QWERTZ mit ue/oe/ae) statt Englisch (QWERTY) als Vorgabe
         return if (conf.locale.toString().lowercase(Locale.getDefault()).startsWith("ru_")) {
             LANGUAGE_RUSSIAN
         } else {
-            LANGUAGE_GERMAN_QWERTZ
+            LANGUAGE_GERMAN
         }
     }
 

@@ -15,8 +15,10 @@ object RosenwegVorgaben {
     private const val GELB = 0xFFFFD600.toInt()
 
     private fun deutsch(c: Config) {
-        c.keyboardLanguage = LANGUAGE_GERMAN_QWERTZ
-        c.selectedLanguages = mutableSetOf(LANGUAGE_GERMAN_QWERTZ)
+        // "Deutsch" ist das volle QWERTZ mit eigenen Tasten fuer ue/oe/ae; "Deutsch (QWERTZ)"
+        // ist eine kompakte Variante ohne sie (Stefan 25.11.2026: "hat nicht oeuea")
+        c.keyboardLanguage = LANGUAGE_GERMAN
+        c.selectedLanguages = mutableSetOf(LANGUAGE_GERMAN)
     }
 
     fun anwenden(context: Context) {
@@ -29,10 +31,10 @@ object RosenwegVorgaben {
                 }
                 c.rosenwegVorgabenStand = 2
             }
-            // Stand 3 (25.11.2026, Stefan: "deutsch qwertz fuer alle"): einmal auf Deutsch (QWERTZ)
-            if (c.rosenwegVorgabenStand < 3) {
+            // Stand 3/4 (25.11.2026, Stefan: "deutsch qwertz fuer alle", mit ue/oe/ae): einmal auf Deutsch
+            if (c.rosenwegVorgabenStand < 4) {
                 deutsch(c)
-                c.rosenwegVorgabenStand = 3
+                c.rosenwegVorgabenStand = 4
             }
             return
         }
@@ -51,6 +53,6 @@ object RosenwegVorgaben {
         c.vibrateOnKeypress = true
         c.showNumbersRow = true
         c.rosenwegVorgabenGesetzt = true
-        c.rosenwegVorgabenStand = 3
+        c.rosenwegVorgabenStand = 4
     }
 }
