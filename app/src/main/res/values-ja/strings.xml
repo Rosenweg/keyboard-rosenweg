@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">キーボード</string>
+    <string name="app_launcher_name">Rosenweg キーボード</string>
     <string name="change_keyboard">キーボードを変更する</string>
     <string name="manage_clipboard_items">クリップボードアイテムの管理</string>
     <string name="manage_clipboard_empty">クリップボードが空です。</string>

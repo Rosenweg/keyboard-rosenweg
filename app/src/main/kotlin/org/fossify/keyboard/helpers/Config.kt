@@ -11,6 +11,16 @@ class Config(context: Context) : BaseConfig(context) {
         fun newInstance(context: Context) = Config(context.safeStorageContext)
     }
 
+    /** Rosenweg: wurden die Vorgaben (Kontrast, Treffbarkeit) schon einmal gesetzt? */
+    var rosenwegVorgabenGesetzt: Boolean
+        get() = prefs.getBoolean("rosenweg_vorgaben_v1", false)
+        set(wert) = prefs.edit().putBoolean("rosenweg_vorgaben_v1", wert).apply()
+
+    /** Rosenweg: Stand der Vorgaben (2 = Hoehe 120 % statt 140 %). */
+    var rosenwegVorgabenStand: Int
+        get() = prefs.getInt("rosenweg_vorgaben_stand", 0)
+        set(wert) = prefs.edit().putInt("rosenweg_vorgaben_stand", wert).apply()
+
     var vibrateOnKeypress: Boolean
         get() = prefs.getBoolean(VIBRATE_ON_KEYPRESS, true)
         set(vibrateOnKeypress) = prefs.edit().putBoolean(VIBRATE_ON_KEYPRESS, vibrateOnKeypress).apply()
@@ -80,10 +90,11 @@ class Config(context: Context) : BaseConfig(context) {
 
     fun getDefaultLanguage(): Int {
         val conf = context.resources.configuration
+        // Rosenweg: Deutsch (volles QWERTZ mit ue/oe/ae) statt Englisch (QWERTY) als Vorgabe
         return if (conf.locale.toString().lowercase(Locale.getDefault()).startsWith("ru_")) {
             LANGUAGE_RUSSIAN
         } else {
-            LANGUAGE_ENGLISH_QWERTY
+            LANGUAGE_GERMAN
         }
     }
 

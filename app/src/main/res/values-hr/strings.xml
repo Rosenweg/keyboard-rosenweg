@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tipkovnica</string>
+    <string name="app_launcher_name">Rosenweg Tipkovnica</string>
     <string name="change_keyboard">Promijeni tipkovnicu</string>
     <string name="manage_clipboard_items">Upravljaj stavkama međuspremnika</string>
     <string name="manage_clipboard_empty">Tvoj međuspremnik je prazan.</string>

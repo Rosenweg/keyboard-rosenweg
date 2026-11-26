@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tastatur</string>
+    <string name="app_launcher_name">Rosenweg Tastatur</string>
     <string name="change_keyboard">Skift tastatur</string>
     <string name="manage_clipboard_items">Administrer elementer i udklipsholder</string>
     <string name="manage_clipboard_empty">Din udklipsholder er tom.</string>

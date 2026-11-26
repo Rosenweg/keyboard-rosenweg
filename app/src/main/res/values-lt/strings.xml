@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Klaviatūra</string>
+    <string name="app_launcher_name">Rosenweg Klaviatūra</string>
     <string name="change_keyboard">Keisti klaviatūrą</string>
     <string name="clear_clipboard_data">Valyti iškarpinės duomenis</string>
     <string name="clear_clipboard_data_confirmation">Ar tikrai norite išvalyti iškarpinės duomenis\?</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Teclado</string>
+    <string name="app_launcher_name">Rosenweg Teclado</string>
     <string name="change_keyboard">Cambiar o teclado</string>
     <string name="manage_clipboard_items">Xestionar elementos do portapapeis</string>
     <string name="manage_clipboard_empty">O teu portapapeis está baleiro.</string>

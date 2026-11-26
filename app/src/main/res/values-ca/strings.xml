@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Teclat</string>
+    <string name="app_launcher_name">Rosenweg Teclat</string>
     <string name="change_keyboard">Canvia el teclat</string>
     <string name="manage_clipboard_items">Gestió dels elements del porta-retalls</string>
     <string name="manage_clipboard_empty">El porta-retalls està buit.</string>

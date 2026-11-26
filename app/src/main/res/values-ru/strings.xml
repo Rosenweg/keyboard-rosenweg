@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Клавиатура</string>
+    <string name="app_launcher_name">Rosenweg Клавиатура</string>
     <string name="change_keyboard">Сменить клавиатуру</string>
     <string name="manage_clipboard_items">Управлять данными из буфера обмена</string>
     <string name="manage_clipboard_empty">Ваш буфер обмена пуст.</string>

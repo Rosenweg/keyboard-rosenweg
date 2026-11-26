@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tastiera</string>
+    <string name="app_launcher_name">Rosenweg Tastiera</string>
     <string name="change_keyboard">Cambia la tastiera</string>
     <string name="manage_clipboard_items">Gestisci gli elementi degli appunti</string>
     <string name="manage_clipboard_empty">Gli appunti sono vuoti.</string>

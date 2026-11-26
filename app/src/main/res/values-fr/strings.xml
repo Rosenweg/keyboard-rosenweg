@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Clavier</string>
+    <string name="app_launcher_name">Rosenweg Clavier</string>
     <string name="change_keyboard">Changer de clavier</string>
     <string name="manage_clipboard_items">Gérer les éléments du presse-papiers</string>
     <string name="manage_clipboard_empty">Votre presse-papiers est vide.</string>
