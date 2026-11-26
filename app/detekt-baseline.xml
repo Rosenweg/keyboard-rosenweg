@@ -8,6 +8,7 @@
     <ID>ComplexCondition:MyKeyboardView.kt$MyKeyboardView$(show &amp;&amp; keyboardViewBinding?.clipboardValue!!.alpha == 0f) || (!show &amp;&amp; keyboardViewBinding?.clipboardValue!!.alpha == 1f)</ID>
     <ID>ComplexCondition:MyKeyboardView.kt$MyKeyboardView$key.label.isNotEmpty() &amp;&amp; key.code != KEYCODE_MODE_CHANGE &amp;&amp; key.code != KEYCODE_SYMBOLS_MODE_CHANGE &amp;&amp; key.code != KEYCODE_SHIFT</ID>
     <ID>ComplexCondition:MyKeyboardView.kt$MyKeyboardView$mBuffer == null || mKeyboardChanged &amp;&amp; (mBuffer!!.width != width || mBuffer!!.height != height)</ID>
+    <ID>CyclomaticComplexMethod:AnlageEinstellungen.kt$AnlageEinstellungen$private fun senden(ctx: Context, prefs: SharedPreferences)</ID>
     <ID>CyclomaticComplexMethod:ContextExt.kt$fun Context.setupKeyboardDialogStuff( windowToken: IBinder, view: View, dialog: AlertDialog.Builder, titleId: Int = 0, titleText: String = "", cancelOnTouchOutside: Boolean = true, callback: ((alertDialog: AlertDialog) -&gt; Unit)? = null )</ID>
     <ID>CyclomaticComplexMethod:MyKeyboard.kt$MyKeyboard$@SuppressLint("UseCompatLoadingForDrawables") private fun loadKeyboard(context: Context, parser: XmlResourceParser)</ID>
     <ID>CyclomaticComplexMethod:MyKeyboardView.kt$MyKeyboardView$@SuppressLint("UseCompatLoadingForDrawables") private fun onBufferDraw()</ID>
@@ -24,6 +25,7 @@
     <ID>LongMethod:MyKeyboardView.kt$MyKeyboardView$@SuppressLint("UseCompatLoadingForDrawables") private fun onBufferDraw()</ID>
     <ID>LongMethod:MyKeyboardView.kt$MyKeyboardView$private fun onModifiedTouchEvent(me: MotionEvent): Boolean</ID>
     <ID>LongMethod:SimpleKeyboardIME.kt$SimpleKeyboardIME$override fun onKey(code: Int)</ID>
+    <ID>LoopWithTooManyJumpStatements:AnlageEinstellungen.kt$AnlageEinstellungen$for</ID>
     <ID>LoopWithTooManyJumpStatements:MyKeyboard.kt$MyKeyboard$while</ID>
     <ID>MagicNumber:Config.kt$Config$100</ID>
     <ID>MagicNumber:EmojiHelper.kt$3</ID>
@@ -46,9 +48,15 @@
     <ID>MagicNumber:MyKeyboardView.kt$MyKeyboardView$255</ID>
     <ID>MagicNumber:MyKeyboardView.kt$MyKeyboardView$3</ID>
     <ID>MagicNumber:MyKeyboardView.kt$MyKeyboardView$4</ID>
+    <ID>MagicNumber:RosenwegVorgaben.kt$RosenwegVorgaben$100f</ID>
+    <ID>MagicNumber:RosenwegVorgaben.kt$RosenwegVorgaben$3f</ID>
+    <ID>MagicNumber:RosenwegVorgaben.kt$RosenwegVorgaben$4</ID>
+    <ID>MagicNumber:RosenwegVorgaben.kt$RosenwegVorgaben$5</ID>
+    <ID>MagicNumber:RosenwegVorgaben.kt$RosenwegVorgaben$8f</ID>
     <ID>MagicNumber:SimpleKeyboardIME.kt$SimpleKeyboardIME$100</ID>
     <ID>MagicNumber:SimpleKeyboardIME.kt$SimpleKeyboardIME$8</ID>
     <ID>MatchingDeclarationName:Constants.kt$ShiftState</ID>
+    <ID>MaxLineLength:AnlageEinstellungen.kt$AnlageEinstellungen$*</ID>
     <ID>MaxLineLength:ClipsActivityAdapter.kt$ClipsActivityAdapter$activity: BaseSimpleActivity</ID>
     <ID>MaxLineLength:ClipsActivityAdapter.kt$ClipsActivityAdapter$override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)</ID>
     <ID>MaxLineLength:ClipsKeyboardAdapter.kt$ClipsKeyboardAdapter$layerDrawable.findDrawableByLayerId(R.id.clipboard_background_stroke).applyColorFilter(context.getStrokeColor())</ID>
@@ -100,8 +108,11 @@
     <ID>NestedBlockDepth:MyKeyboardView.kt$MyKeyboardView$private fun onModifiedTouchEvent(me: MotionEvent): Boolean</ID>
     <ID>NestedBlockDepth:SimpleKeyboardIME.kt$SimpleKeyboardIME$override fun onKey(code: Int)</ID>
     <ID>SpreadOperator:MyKeyboardView.kt$MyKeyboardView$(*animations.toTypedArray())</ID>
+    <ID>SwallowedException:AnlageEinstellungen.kt$AnlageEinstellungen$e: Exception</ID>
     <ID>SwallowedException:ManageClipboardItemsActivity.kt$ManageClipboardItemsActivity$e: ActivityNotFoundException</ID>
     <ID>SwallowedException:MyKeyboard.kt$MyKeyboard$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AnlageEinstellungen.kt$AnlageEinstellungen$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AnlageEinstellungen.kt$AnlageEinstellungen.Empfaenger$e: Exception</ID>
     <ID>TooGenericExceptionCaught:ManageClipboardItemsActivity.kt$ManageClipboardItemsActivity$e: Exception</ID>
     <ID>TooGenericExceptionCaught:MyKeyboard.kt$MyKeyboard$e: Exception</ID>
     <ID>TooManyFunctions:ClipsActivityAdapter.kt$ClipsActivityAdapter : MyRecyclerViewAdapterItemTouchHelperContract</ID>
